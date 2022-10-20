@@ -7,8 +7,7 @@
   "authors": [
     "Committee Nova",
     "Tapio",
-    "Wugui.sp",
-    "kpXicon"
+    "Wugui.sp"
   ],
   "contact": {},
   "license": "AGPL-3.0",
@@ -25,6 +24,6 @@
   "depends": {
     "fabricloader": "*",
     "fabric": "*",
-    "minecraft": "*"
+    "minecraft": "1.19.*"
   }
 }
