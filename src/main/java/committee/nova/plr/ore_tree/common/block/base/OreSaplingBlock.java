@@ -83,6 +83,15 @@ public class OreSaplingBlock extends PlantBlock {
                 tryPlace(world, treeNBTLocation, pos);
             }
         }
+        else {
+            if (random.nextDouble() <= randomTickValue && world.getBaseLightLevel(pos.up(), 0) >= 9) {
+                if (i < 3) {
+                    world.setBlockState(pos, state.with(AGE, i + 1), 2);
+                } else {
+                    tryPlace(world, treeNBTLocation, pos);
+                }
+            }
+        }
     }
 
     @Override
